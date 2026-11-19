@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0b1c2d">
+	<meta name="description" content="Pratique hábitos seguros com simuladores educativos que funcionam no seu navegador.">
+	<title>Laboratório | Navega Seguro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+	<header class="site-header"><div class="container header-inner">
+		<a class="brand" href="index.html" aria-label="Navega Seguro, página inicial"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+		<nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Painel</a><a href="index.html#ameacas">Ameaças</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html" aria-current="page">Laboratório</a><a href="conta.html">Meu progresso</a></nav>
+		<a class="header-cta" href="conta.html">Meu progresso <span aria-hidden="true">↗</span></a>
+	</div></header>
+	<main id="conteudo">
+		<section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow eyebrow-blue">PRATIQUE SEM RISCO</p><h1>Laboratório de <span>segurança.</span></h1><p>Experimente, observe os sinais e aprenda. Os testes acontecem neste navegador: nenhuma senha é enviada ou armazenada.</p></div></section>
+		<section class="lab-section section-pad"><div class="container lab-grid">
+			<article class="tool-panel" aria-labelledby="password-tool-title">
+				<div class="tool-heading"><span class="tool-number">01</span><p class="eyebrow eyebrow-blue">VERIFICAÇÃO LOCAL</p></div>
+				<h2 id="password-tool-title">Confira a força de uma senha</h2>
+				<p class="tool-description">A análise fica na memória desta página. Ao sair, o texto digitado é descartado.</p>
+				<label class="field-label" for="password-checker">Digite uma senha de exemplo</label>
+				<div class="password-input-wrap"><input id="password-checker" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="password-privacy password-result" placeholder="Digite para analisar"><button id="password-visibility" class="visibility-toggle" type="button" aria-label="Mostrar senha">Mostrar</button></div>
+				<p class="privacy-note" id="password-privacy"><span aria-hidden="true">◈</span> Não usamos servidor, não salvamos e não registramos o texto digitado.</p>
+				<div class="strength-track" role="progressbar" aria-label="Força estimada da senha" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" id="password-strength"><span></span></div>
+				<p class="strength-result" id="password-result" aria-live="polite">Aguardando senha de exemplo</p>
+				<ul class="criteria-list" aria-label="Critérios de senha"><li data-criterion="length"><span aria-hidden="true">○</span> 12 caracteres ou mais</li><li data-criterion="mixed"><span aria-hidden="true">○</span> Letras maiúsculas e minúsculas</li><li data-criterion="number"><span aria-hidden="true">○</span> Pelo menos um número</li><li data-criterion="symbol"><span aria-hidden="true">○</span> Pelo menos um símbolo</li></ul>
+				<button class="button button-outline" id="password-clear" type="button">Apagar do campo</button>
+			</article>
+			<article class="tool-panel phishing-panel" aria-labelledby="phishing-tool-title">
+				<div class="tool-heading"><span class="tool-number">02</span><p class="eyebrow eyebrow-blue">SIMULADOR EDUCATIVO</p></div>
+				<h2 id="phishing-tool-title">Você confiaria nesta mensagem?</h2>
+				<p class="tool-description">Leia o exemplo fictício e procure os sinais antes de escolher uma resposta.</p>
+				<div class="message-sample"><div class="message-top"><span class="message-avatar" aria-hidden="true">?</span><span><strong>Equipe de Segurança</strong><small>aviso@conta.exemplo.invalid</small></span><span class="message-time">agora</span></div><div class="message-body"><p>ATENÇÃO: sua conta será suspensa em 30 minutos. Confirme seus dados agora para evitar o bloqueio.</p><span class="fake-link">https://acesso-conta.exemplo.invalid/confirmar</span></div></div>
+				<p class="field-label">Como você classificaria?</p>
+				<div class="simulator-actions"><button class="button button-outline" type="button" data-phishing-answer="safe">Parece confiável</button><button class="button button-primary" type="button" data-phishing-answer="suspicious">Parece suspeita</button></div>
+				<div id="phishing-feedback" class="simulator-feedback" role="status" aria-live="polite" hidden></div>
+				<p class="simulation-disclaimer">Exemplo inventado para aprendizagem. O domínio <code>.invalid</code> não é um site real.</p>
+			</article>
+		</div></section>
+		<section class="section-band"><div class="container band-inner"><div><p class="eyebrow eyebrow-blue">CONTINUE APRENDENDO</p><h2>Reconhecer é o primeiro passo.</h2></div><a class="button button-primary" href="biblioteca.html">Abrir biblioteca <span aria-hidden="true">→</span></a></div></section>
+	</main>
+	<footer class="site-footer"><div class="container footer-main"><div class="footer-brand-block"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a><p>Conhecimento para uma internet mais segura, para todas as pessoas.</p></div><div class="footer-links"><p class="footer-label">EXPLORE</p><a href="index.html#ameacas">Ameaças</a><a href="biblioteca.html">Biblioteca</a><a href="conta.html">Meu progresso</a></div><div class="footer-contact"><p class="footer-label">CONTATO</p><a class="contact-number" href="tel:+5581999999999">(81) 99999 - 9999 <span aria-hidden="true">↗</span></a><p>Projeto educativo de segurança digital.</p></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Navega Seguro</span><span>Informação é uma forma de proteção.</span><a href="#conteudo">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>

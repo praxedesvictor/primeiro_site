@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0b1c2d">
+	<meta name="description" content="Artigos, guias e glossário para aprender segurança digital com clareza.">
+	<title>Biblioteca | Navega Seguro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+	<header class="site-header"><div class="container header-inner">
+		<a class="brand" href="index.html" aria-label="Navega Seguro, página inicial"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+		<nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Painel</a><a href="index.html#ameacas">Ameaças</a><a href="biblioteca.html" aria-current="page">Biblioteca</a><a href="laboratorio.html">Laboratório</a><a href="conta.html">Meu progresso</a></nav>
+		<a class="header-cta" href="laboratorio.html">Praticar agora <span aria-hidden="true">↗</span></a>
+	</div></header>
+	<main id="conteudo">
+		<section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow eyebrow-blue">CONHECIMENTO QUE PROTEGE</p><h1>Biblioteca de <span>segurança digital.</span></h1><p>Guias práticos, artigos introdutórios e termos explicados sem complicação.</p></div></section>
+		<section class="library-section section-pad"><div class="container">
+			<div class="library-toolbar"><label class="search-field"><span class="sr-only">Buscar na biblioteca</span><span aria-hidden="true">⌕</span><input id="library-search" type="search" placeholder="Buscar artigos e guias" autocomplete="off"></label><span id="library-count" class="library-count" aria-live="polite">6 materiais</span></div>
+			<div class="library-grid" id="library-grid">
+				<article class="library-card" data-library-item data-keywords="phishing e-mail fraude link"><span class="library-category">ARTIGO · GOLPES</span><h2>Como reconhecer uma tentativa de phishing</h2><p>Aprenda a identificar urgência artificial, remetentes suspeitos e links que não levam ao destino esperado.</p><a href="index.html#ameacas" class="note-link">Ver sinais de phishing <span aria-hidden="true">→</span></a></article>
+				<article class="library-card" data-library-item data-keywords="senha conta autenticação dois fatores"><span class="library-category">GUIA · CONTAS</span><h2>Um guia para cuidar das suas senhas</h2><p>Use senhas únicas e longas, ative uma segunda etapa e saiba o que fazer quando uma senha é exposta.</p><a href="laboratorio.html" class="note-link">Experimentar o verificador <span aria-hidden="true">→</span></a></article>
+				<article class="library-card" data-library-item data-keywords="privacidade dados pessoal aplicativo"><span class="library-category">ARTIGO · PRIVACIDADE</span><h2>Seus dados pessoais merecem cuidado</h2><p>CPF, endereço, telefone e dados bancários podem facilitar fraudes quando compartilhados sem necessidade.</p><a href="index.html#protecao" class="note-link">Rever hábitos de proteção <span aria-hidden="true">→</span></a></article>
+				<article class="library-card" data-library-item data-keywords="wifi rede pública internet"><span class="library-category">GUIA · DISPOSITIVOS</span><h2>Cuidados ao usar redes Wi-Fi públicas</h2><p>Saiba por que evitar operações sensíveis em redes abertas e como preferir uma conexão mais segura.</p><a href="index.html#protecao" class="note-link">Ver recomendações <span aria-hidden="true">→</span></a></article>
+				<article class="library-card" data-library-item data-keywords="engenharia social golpe manipulação"><span class="library-category">ARTIGO · ENGENHARIA SOCIAL</span><h2>Quando a urgência é parte do golpe</h2><p>Golpistas podem explorar medo, confiança ou pressa. Pausar e confirmar por outro canal ajuda a quebrar o ciclo.</p><a href="laboratorio.html" class="note-link">Praticar com o simulador <span aria-hidden="true">→</span></a></article>
+				<article class="library-card" data-library-item data-keywords="atualização malware aplicativo celular"><span class="library-category">GUIA · ATUALIZAÇÕES</span><h2>Por que atualizar seus dispositivos</h2><p>Atualizações corrigem falhas conhecidas. Mantenha sistema, navegador e aplicativos em dia.</p><a href="index.html#protecao" class="note-link">Ver lista de proteção <span aria-hidden="true">→</span></a></article>
+			</div>
+			<p class="empty-search" id="library-empty" hidden>Nenhum material corresponde a essa busca.</p>
+		</div></section>
+		<section class="glossary-section section-pad"><div class="container glossary-layout"><div><p class="eyebrow eyebrow-blue">CONSULTA RÁPIDA</p><h2>Glossário<br><span>sem mistério.</span></h2><p class="glossary-intro">Termos que aparecem quando falamos sobre proteção na internet.</p></div><div class="glossary-list">
+			<details><summary>Autenticação em dois fatores <span>+</span></summary><p>Uma confirmação adicional à senha, como um código temporário ou uma chave de acesso, para dificultar entradas não autorizadas.</p></details>
+			<details><summary>Malware <span>+</span></summary><p>Software criado para executar ações indesejadas, como roubar informações, espionar ou danificar arquivos.</p></details>
+			<details><summary>Phishing <span>+</span></summary><p>Tentativa de enganar alguém com mensagens ou páginas falsas para obter dados ou induzir uma ação.</p></details>
+			<details><summary>Engenharia social <span>+</span></summary><p>Uso de manipulação psicológica para convencer alguém a revelar informações ou realizar uma ação que favorece o golpista.</p></details>
+			<details><summary>Vazamento de dados <span>+</span></summary><p>Exposição não autorizada de informações pessoais ou organizacionais, por incidente, erro ou acesso indevido.</p></details>
+		</div></div></section>
+		<section class="section-band"><div class="container band-inner"><div><p class="eyebrow eyebrow-blue">APRENDER NA PRÁTICA</p><h2>Teste seus conhecimentos.</h2></div><a class="button button-primary" href="index.html#quiz">Ir para o quiz <span aria-hidden="true">→</span></a></div></section>
+	</main>
+	<footer class="site-footer"><div class="container footer-main"><div class="footer-brand-block"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a><p>Conhecimento para uma internet mais segura, para todas as pessoas.</p></div><div class="footer-links"><p class="footer-label">EXPLORE</p><a href="index.html#ameacas">Ameaças</a><a href="laboratorio.html">Laboratório</a><a href="conta.html">Meu progresso</a></div><div class="footer-contact"><p class="footer-label">CONTATO</p><a class="contact-number" href="tel:+5581999999999">(81) 99999 - 9999 <span aria-hidden="true">↗</span></a><p>Projeto educativo de segurança digital.</p></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Navega Seguro</span><span>Informação é uma forma de proteção.</span><a href="#conteudo">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0b1c2d">
+	<meta name="description" content="Acompanhe seu progresso de aprendizagem neste navegador.">
+	<title>Meu progresso | Navega Seguro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+	<header class="site-header"><div class="container header-inner">
+		<a class="brand" href="index.html" aria-label="Navega Seguro, página inicial"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+		<nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Painel</a><a href="index.html#ameacas">Ameaças</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratório</a><a href="conta.html" aria-current="page">Meu progresso</a></nav>
+		<a class="header-cta" href="admin.html">Administração demo <span aria-hidden="true">↗</span></a>
+	</div></header>
+	<main id="conteudo">
+		<section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow eyebrow-blue">SEU ESPAÇO DE APRENDIZAGEM</p><h1>Meu <span>progresso.</span></h1><p>Acompanhe os quizzes concluídos e retome seus estudos neste navegador.</p></div></section>
+		<section class="account-section section-pad"><div class="container account-layout">
+			<div class="demo-notice"><span class="notice-symbol" aria-hidden="true">i</span><div><strong>Perfil local demonstrativo</strong><p>Este projeto não tem servidor de autenticação. Não informe senha nem dados sensíveis. O apelido e o histórico ficam somente neste navegador; não é uma conta com login seguro.</p></div></div>
+			<div class="account-columns">
+				<section class="account-panel" aria-labelledby="profile-title"><p class="eyebrow eyebrow-blue">PERFIL DE APRENDIZAGEM</p><h2 id="profile-title">Como podemos chamar você?</h2><p class="tool-description">Use um apelido. Não inclua e-mail, senha ou outras informações pessoais.</p><form id="profile-form"><label class="field-label" for="profile-name">Apelido</label><input class="text-input" id="profile-name" name="nickname" maxlength="32" autocomplete="off" placeholder="Ex.: pessoa curiosa" required><button class="button button-primary form-submit" type="submit">Salvar perfil local <span aria-hidden="true">→</span></button></form><p id="profile-feedback" class="form-feedback" role="status" aria-live="polite"></p><button class="quiet-button" id="profile-clear" type="button" hidden>Remover perfil e histórico deste navegador</button></section>
+				<section class="account-panel history-panel" aria-labelledby="history-title"><div class="history-heading"><div><p class="eyebrow eyebrow-blue">ACOMPANHAMENTO</p><h2 id="history-title">Histórico de quizzes</h2></div><span class="history-count" id="history-count">0</span></div><div id="quiz-history" class="history-list"><p class="empty-state">Conclua o quiz da página inicial para ver seu progresso aqui.</p></div></section>
+			</div>
+			<p class="account-footnote">Os dados locais podem ser apagados ao limpar os dados do navegador. Para cadastro, login e sincronização entre dispositivos, é necessário implementar um backend com autenticação segura.</p>
+		</div></section>
+	</main>
+	<footer class="site-footer"><div class="container footer-main"><div class="footer-brand-block"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a><p>Conhecimento para uma internet mais segura, para todas as pessoas.</p></div><div class="footer-links"><p class="footer-label">EXPLORE</p><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratório</a><a href="admin.html">Painel administrativo demo</a></div><div class="footer-contact"><p class="footer-label">CONTATO</p><a class="contact-number" href="tel:+5581999999999">(81) 99999 - 9999 <span aria-hidden="true">↗</span></a><p>Projeto educativo de segurança digital.</p></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Navega Seguro</span><span>Informação é uma forma de proteção.</span><a href="#conteudo">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>

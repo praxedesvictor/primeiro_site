@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0b1c2d">
+	<meta name="description" content="Demonstração local de gerenciamento de conteúdos educativos.">
+	<title>Administração demo | Navega Seguro</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+	<header class="site-header"><div class="container header-inner">
+		<a class="brand" href="index.html" aria-label="Navega Seguro, página inicial"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+		<nav class="main-nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Painel</a><a href="index.html#ameacas">Ameaças</a><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratório</a><a href="conta.html">Meu progresso</a></nav>
+		<a class="header-cta" href="biblioteca.html">Ver biblioteca <span aria-hidden="true">↗</span></a>
+	</div></header>
+	<main id="conteudo">
+		<section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow eyebrow-blue">ÁREA DE DEMONSTRAÇÃO</p><h1>Painel <span>administrativo.</span></h1><p>Veja como o gerenciamento de artigos e indicadores pode ser organizado.</p></div></section>
+		<section class="admin-section section-pad"><div class="container">
+			<div class="demo-notice admin-notice"><span class="notice-symbol" aria-hidden="true">!</span><div><strong>Demonstração somente neste navegador</strong><p>Não há controle de acesso, banco de dados ou usuários reais neste projeto estático. O conteúdo criado aqui fica localmente no seu navegador e não é publicado para outras pessoas.</p></div></div>
+			<div class="admin-metrics" aria-label="Indicadores locais"><article><span>Artigos de demonstração</span><strong id="admin-article-count">0</strong></article><article><span>Perfis locais neste navegador</span><strong id="admin-user-count">0</strong></article><article><span>Tentativas de quiz salvas</span><strong id="admin-quiz-count">0</strong></article></div>
+			<div class="admin-layout">
+				<section class="account-panel" aria-labelledby="article-form-title"><p class="eyebrow eyebrow-blue">GERENCIAR CONTEÚDO</p><h2 id="article-form-title">Cadastrar artigo</h2><form id="article-form" class="stacked-form"><label class="field-label" for="article-title">Título</label><input class="text-input" id="article-title" maxlength="90" required><label class="field-label" for="article-category">Categoria</label><select class="text-input" id="article-category"><option>Guias</option><option>Golpes e ameaças</option><option>Privacidade</option><option>Contas e senhas</option></select><label class="field-label" for="article-summary">Resumo</label><textarea class="text-input text-area" id="article-summary" maxlength="240" rows="4" required></textarea><button class="button button-primary form-submit" type="submit">Adicionar à lista local <span aria-hidden="true">→</span></button></form><p id="article-feedback" class="form-feedback" role="status" aria-live="polite"></p></section>
+				<section class="account-panel admin-list-panel" aria-labelledby="admin-content-title"><div class="history-heading"><div><p class="eyebrow eyebrow-blue">CONTEÚDO SALVO LOCALMENTE</p><h2 id="admin-content-title">Artigos adicionados</h2></div></div><div id="admin-article-list" class="admin-article-list"><p class="empty-state">Nenhum artigo criado nesta demonstração.</p></div><div class="local-users"><p class="eyebrow eyebrow-blue">PERFIS LOCAIS</p><h3>Usuários demonstrativos</h3><div id="admin-user-list"><p class="empty-state">Ainda não há perfil local neste navegador.</p></div></div></section>
+			</div>
+			<p class="account-footnote">Uma instalação real precisa de API, banco de dados, autenticação e autorização por função, validação no servidor, proteção contra abuso e rotinas de privacidade antes de habilitar gestão de usuários.</p>
+		</div></section>
+	</main>
+	<footer class="site-footer"><div class="container footer-main"><div class="footer-brand-block"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span>NAVEGA<span class="brand-light">SEGURO</span></span></a><p>Conhecimento para uma internet mais segura, para todas as pessoas.</p></div><div class="footer-links"><p class="footer-label">EXPLORE</p><a href="biblioteca.html">Biblioteca</a><a href="laboratorio.html">Laboratório</a><a href="conta.html">Meu progresso</a></div><div class="footer-contact"><p class="footer-label">CONTATO</p><a class="contact-number" href="tel:+5581999999999">(81) 99999 - 9999 <span aria-hidden="true">↗</span></a><p>Projeto educativo de segurança digital.</p></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Navega Seguro</span><span>Informação é uma forma de proteção.</span><a href="#conteudo">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
